@@ -1,0 +1,495 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis minScale="100000000" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingHints="1" simplifyLocal="1" maxScale="0" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" autoRefreshTime="0" version="3.40.5-Bratislava" simplifyAlgorithm="0" readOnly="0">
+  <flags>
+    <Identifiable>1</Identifiable>
+    <Removable>1</Removable>
+    <Searchable>1</Searchable>
+    <Private>0</Private>
+  </flags>
+  <temporal mode="0" durationField="fid" endExpression="" enabled="0" limitMode="0" fixedDuration="0" endField="" startExpression="" startField="OBCHG_DT" durationUnit="min" accumulate="0">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
+  <elevation extrusionEnabled="0" zoffset="0" extrusion="0" showMarkerSymbolInSurfacePlots="0" respectLayerSymbol="1" type="IndividualFeatures" binding="Centroid" symbology="Line" zscale="1" clamping="Terrain">
+    <data-defined-properties>
+      <Option type="Map">
+        <Option name="name" value="" type="QString"/>
+        <Option name="properties"/>
+        <Option name="type" value="collection" type="QString"/>
+      </Option>
+    </data-defined-properties>
+    <profileLineSymbol>
+      <symbol name="" alpha="1" is_animated="0" clip_to_extent="1" frame_rate="10" force_rhr="0" type="line">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleLine" enabled="1" id="{98f3e80d-afbe-461d-b959-0ef77b3d53f8}" pass="0">
+          <Option type="Map">
+            <Option name="align_dash_pattern" value="0" type="QString"/>
+            <Option name="capstyle" value="square" type="QString"/>
+            <Option name="customdash" value="5;2" type="QString"/>
+            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="customdash_unit" value="MM" type="QString"/>
+            <Option name="dash_pattern_offset" value="0" type="QString"/>
+            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
+            <Option name="draw_inside_polygon" value="0" type="QString"/>
+            <Option name="joinstyle" value="bevel" type="QString"/>
+            <Option name="line_color" value="255,158,23,255,rgb:1,0.61960784313725492,0.09019607843137255,1" type="QString"/>
+            <Option name="line_style" value="solid" type="QString"/>
+            <Option name="line_width" value="0.6" type="QString"/>
+            <Option name="line_width_unit" value="MM" type="QString"/>
+            <Option name="offset" value="0" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="ring_filter" value="0" type="QString"/>
+            <Option name="trim_distance_end" value="0" type="QString"/>
+            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
+            <Option name="trim_distance_start" value="0" type="QString"/>
+            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
+            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
+            <Option name="use_custom_dash" value="0" type="QString"/>
+            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileLineSymbol>
+    <profileFillSymbol>
+      <symbol name="" alpha="1" is_animated="0" clip_to_extent="1" frame_rate="10" force_rhr="0" type="fill">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleFill" enabled="1" id="{f18618e4-c84a-4558-beed-aaddcd92c492}" pass="0">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="color" value="255,158,23,255,rgb:1,0.61960784313725492,0.09019607843137255,1" type="QString"/>
+            <Option name="joinstyle" value="bevel" type="QString"/>
+            <Option name="offset" value="0,0" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="outline_color" value="182,113,16,255,rgb:0.71427481498435952,0.44252689402609291,0.06442359044785229,1" type="QString"/>
+            <Option name="outline_style" value="solid" type="QString"/>
+            <Option name="outline_width" value="0.2" type="QString"/>
+            <Option name="outline_width_unit" value="MM" type="QString"/>
+            <Option name="style" value="solid" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileFillSymbol>
+    <profileMarkerSymbol>
+      <symbol name="" alpha="1" is_animated="0" clip_to_extent="1" frame_rate="10" force_rhr="0" type="marker">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleMarker" enabled="1" id="{c0b7ebdc-c717-4b26-a0bb-fd49d9083083}" pass="0">
+          <Option type="Map">
+            <Option name="angle" value="0" type="QString"/>
+            <Option name="cap_style" value="square" type="QString"/>
+            <Option name="color" value="255,158,23,255,rgb:1,0.61960784313725492,0.09019607843137255,1" type="QString"/>
+            <Option name="horizontal_anchor_point" value="1" type="QString"/>
+            <Option name="joinstyle" value="bevel" type="QString"/>
+            <Option name="name" value="diamond" type="QString"/>
+            <Option name="offset" value="0,0" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="outline_color" value="182,113,16,255,rgb:0.71427481498435952,0.44252689402609291,0.06442359044785229,1" type="QString"/>
+            <Option name="outline_style" value="solid" type="QString"/>
+            <Option name="outline_width" value="0.2" type="QString"/>
+            <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="outline_width_unit" value="MM" type="QString"/>
+            <Option name="scale_method" value="diameter" type="QString"/>
+            <Option name="size" value="3" type="QString"/>
+            <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="size_unit" value="MM" type="QString"/>
+            <Option name="vertical_anchor_point" value="1" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileMarkerSymbol>
+  </elevation>
+  <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol" referencescale="-1">
+    <symbols>
+      <symbol name="0" alpha="1" is_animated="0" clip_to_extent="1" frame_rate="10" force_rhr="0" type="fill">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleLine" enabled="1" id="{36e859dc-3198-45c0-a382-b10b4b9058a4}" pass="0">
+          <Option type="Map">
+            <Option name="align_dash_pattern" value="0" type="QString"/>
+            <Option name="capstyle" value="square" type="QString"/>
+            <Option name="customdash" value="5;2" type="QString"/>
+            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="customdash_unit" value="MM" type="QString"/>
+            <Option name="dash_pattern_offset" value="0" type="QString"/>
+            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
+            <Option name="draw_inside_polygon" value="0" type="QString"/>
+            <Option name="joinstyle" value="bevel" type="QString"/>
+            <Option name="line_color" value="77,175,74,255,rgb:0.30196078431372547,0.68627450980392157,0.29019607843137257,1" type="QString"/>
+            <Option name="line_style" value="solid" type="QString"/>
+            <Option name="line_width" value="0.96" type="QString"/>
+            <Option name="line_width_unit" value="MM" type="QString"/>
+            <Option name="offset" value="0" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="ring_filter" value="0" type="QString"/>
+            <Option name="trim_distance_end" value="0" type="QString"/>
+            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
+            <Option name="trim_distance_start" value="0" type="QString"/>
+            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
+            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
+            <Option name="use_custom_dash" value="0" type="QString"/>
+            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </symbols>
+    <rotation/>
+    <sizescale/>
+    <data-defined-properties>
+      <Option type="Map">
+        <Option name="name" value="" type="QString"/>
+        <Option name="properties"/>
+        <Option name="type" value="collection" type="QString"/>
+      </Option>
+    </data-defined-properties>
+  </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol name="" alpha="1" is_animated="0" clip_to_extent="1" frame_rate="10" force_rhr="0" type="fill">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleFill" enabled="1" id="{99583360-db76-4a02-9a4d-a0ea92965fd7}" pass="0">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="color" value="0,0,255,255,rgb:0,0,1,1" type="QString"/>
+            <Option name="joinstyle" value="bevel" type="QString"/>
+            <Option name="offset" value="0,0" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="outline_color" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1" type="QString"/>
+            <Option name="outline_style" value="solid" type="QString"/>
+            <Option name="outline_width" value="0.26" type="QString"/>
+            <Option name="outline_width_unit" value="MM" type="QString"/>
+            <Option name="style" value="solid" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </selectionSymbol>
+  </selection>
+  <customproperties>
+    <Option type="Map">
+      <Option name="embeddedWidgets/count" value="0" type="int"/>
+      <Option name="variableNames" type="invalid"/>
+      <Option name="variableValues" type="invalid"/>
+    </Option>
+  </customproperties>
+  <blendMode>0</blendMode>
+  <featureBlendMode>0</featureBlendMode>
+  <layerOpacity>1</layerOpacity>
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+    <activeChecks/>
+    <checkConfiguration type="Map">
+      <Option name="QgsGeometryGapCheck" type="Map">
+        <Option name="allowedGapsBuffer" value="0" type="double"/>
+        <Option name="allowedGapsEnabled" value="false" type="bool"/>
+        <Option name="allowedGapsLayer" type="invalid"/>
+      </Option>
+    </checkConfiguration>
+  </geometryOptions>
+  <legend showLabelLegend="0" type="default-vector"/>
+  <referencedLayers/>
+  <fieldConfiguration>
+    <field name="fid" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="NF_ID" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="ADZONE_NM" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="LEGLCD_SE" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="ADZONE_SE" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="OBCHG_DT" configurationFlags="NoFlag">
+      <editWidget type="DateTime">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="MESRMTH_SE" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="RSREG_DT" configurationFlags="NoFlag">
+      <editWidget type="DateTime">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="MNENT_NM" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="DBREG_DT" configurationFlags="NoFlag">
+      <editWidget type="DateTime">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+  </fieldConfiguration>
+  <aliases>
+    <alias name="" index="0" field="fid"/>
+    <alias name="" index="1" field="NF_ID"/>
+    <alias name="" index="2" field="ADZONE_NM"/>
+    <alias name="" index="3" field="LEGLCD_SE"/>
+    <alias name="" index="4" field="ADZONE_SE"/>
+    <alias name="" index="5" field="OBCHG_DT"/>
+    <alias name="" index="6" field="MESRMTH_SE"/>
+    <alias name="" index="7" field="RSREG_DT"/>
+    <alias name="" index="8" field="MNENT_NM"/>
+    <alias name="" index="9" field="DBREG_DT"/>
+  </aliases>
+  <splitPolicies>
+    <policy policy="Duplicate" field="fid"/>
+    <policy policy="Duplicate" field="NF_ID"/>
+    <policy policy="Duplicate" field="ADZONE_NM"/>
+    <policy policy="Duplicate" field="LEGLCD_SE"/>
+    <policy policy="Duplicate" field="ADZONE_SE"/>
+    <policy policy="Duplicate" field="OBCHG_DT"/>
+    <policy policy="Duplicate" field="MESRMTH_SE"/>
+    <policy policy="Duplicate" field="RSREG_DT"/>
+    <policy policy="Duplicate" field="MNENT_NM"/>
+    <policy policy="Duplicate" field="DBREG_DT"/>
+  </splitPolicies>
+  <duplicatePolicies>
+    <policy policy="Duplicate" field="fid"/>
+    <policy policy="Duplicate" field="NF_ID"/>
+    <policy policy="Duplicate" field="ADZONE_NM"/>
+    <policy policy="Duplicate" field="LEGLCD_SE"/>
+    <policy policy="Duplicate" field="ADZONE_SE"/>
+    <policy policy="Duplicate" field="OBCHG_DT"/>
+    <policy policy="Duplicate" field="MESRMTH_SE"/>
+    <policy policy="Duplicate" field="RSREG_DT"/>
+    <policy policy="Duplicate" field="MNENT_NM"/>
+    <policy policy="Duplicate" field="DBREG_DT"/>
+  </duplicatePolicies>
+  <defaults>
+    <default applyOnUpdate="0" field="fid" expression=""/>
+    <default applyOnUpdate="0" field="NF_ID" expression=""/>
+    <default applyOnUpdate="0" field="ADZONE_NM" expression=""/>
+    <default applyOnUpdate="0" field="LEGLCD_SE" expression=""/>
+    <default applyOnUpdate="0" field="ADZONE_SE" expression=""/>
+    <default applyOnUpdate="0" field="OBCHG_DT" expression=""/>
+    <default applyOnUpdate="0" field="MESRMTH_SE" expression=""/>
+    <default applyOnUpdate="0" field="RSREG_DT" expression=""/>
+    <default applyOnUpdate="0" field="MNENT_NM" expression=""/>
+    <default applyOnUpdate="0" field="DBREG_DT" expression=""/>
+  </defaults>
+  <constraints>
+    <constraint constraints="3" exp_strength="0" field="fid" unique_strength="1" notnull_strength="1"/>
+    <constraint constraints="0" exp_strength="0" field="NF_ID" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="ADZONE_NM" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="LEGLCD_SE" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="ADZONE_SE" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="OBCHG_DT" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="MESRMTH_SE" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="RSREG_DT" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="MNENT_NM" unique_strength="0" notnull_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="DBREG_DT" unique_strength="0" notnull_strength="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint exp="" desc="" field="fid"/>
+    <constraint exp="" desc="" field="NF_ID"/>
+    <constraint exp="" desc="" field="ADZONE_NM"/>
+    <constraint exp="" desc="" field="LEGLCD_SE"/>
+    <constraint exp="" desc="" field="ADZONE_SE"/>
+    <constraint exp="" desc="" field="OBCHG_DT"/>
+    <constraint exp="" desc="" field="MESRMTH_SE"/>
+    <constraint exp="" desc="" field="RSREG_DT"/>
+    <constraint exp="" desc="" field="MNENT_NM"/>
+    <constraint exp="" desc="" field="DBREG_DT"/>
+  </constraintExpressions>
+  <expressionfields/>
+  <attributeactions>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+  </attributeactions>
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+    <columns>
+      <column name="fid" hidden="0" type="field" width="-1"/>
+      <column name="NF_ID" hidden="0" type="field" width="-1"/>
+      <column name="ADZONE_NM" hidden="0" type="field" width="-1"/>
+      <column name="LEGLCD_SE" hidden="0" type="field" width="-1"/>
+      <column name="ADZONE_SE" hidden="0" type="field" width="-1"/>
+      <column name="OBCHG_DT" hidden="0" type="field" width="-1"/>
+      <column name="MESRMTH_SE" hidden="0" type="field" width="-1"/>
+      <column name="RSREG_DT" hidden="0" type="field" width="-1"/>
+      <column name="MNENT_NM" hidden="0" type="field" width="-1"/>
+      <column name="DBREG_DT" hidden="0" type="field" width="-1"/>
+      <column hidden="1" type="actions" width="-1"/>
+    </columns>
+  </attributetableconfig>
+  <conditionalstyles>
+    <rowstyles/>
+    <fieldstyles/>
+  </conditionalstyles>
+  <storedexpressions/>
+  <editform tolerant="1"></editform>
+  <editforminit/>
+  <editforminitcodesource>0</editforminitcodesource>
+  <editforminitfilepath></editforminitfilepath>
+  <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS 양식은 양식이 열릴 때 호출된 파이썬 함수를 보유할 수 있습니다.
+
+이 함수를 사용해서 사용자 양식에 추가적인 로직을 추가하십시오.
+
+"파이썬 초기 함수" 란에 함수 이름을 입력하십시오.
+예제:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+  <featformsuppress>0</featformsuppress>
+  <editorlayout>generatedlayout</editorlayout>
+  <editable>
+    <field name="ADZONE_NM" editable="1"/>
+    <field name="ADZONE_SE" editable="1"/>
+    <field name="DBREG_DT" editable="1"/>
+    <field name="LEGLCD_SE" editable="1"/>
+    <field name="MESRMTH_SE" editable="1"/>
+    <field name="MNENT_NM" editable="1"/>
+    <field name="NF_ID" editable="1"/>
+    <field name="OBCHG_DT" editable="1"/>
+    <field name="RSREG_DT" editable="1"/>
+    <field name="fid" editable="1"/>
+  </editable>
+  <labelOnTop>
+    <field name="ADZONE_NM" labelOnTop="0"/>
+    <field name="ADZONE_SE" labelOnTop="0"/>
+    <field name="DBREG_DT" labelOnTop="0"/>
+    <field name="LEGLCD_SE" labelOnTop="0"/>
+    <field name="MESRMTH_SE" labelOnTop="0"/>
+    <field name="MNENT_NM" labelOnTop="0"/>
+    <field name="NF_ID" labelOnTop="0"/>
+    <field name="OBCHG_DT" labelOnTop="0"/>
+    <field name="RSREG_DT" labelOnTop="0"/>
+    <field name="fid" labelOnTop="0"/>
+  </labelOnTop>
+  <reuseLastValue>
+    <field name="ADZONE_NM" reuseLastValue="0"/>
+    <field name="ADZONE_SE" reuseLastValue="0"/>
+    <field name="DBREG_DT" reuseLastValue="0"/>
+    <field name="LEGLCD_SE" reuseLastValue="0"/>
+    <field name="MESRMTH_SE" reuseLastValue="0"/>
+    <field name="MNENT_NM" reuseLastValue="0"/>
+    <field name="NF_ID" reuseLastValue="0"/>
+    <field name="OBCHG_DT" reuseLastValue="0"/>
+    <field name="RSREG_DT" reuseLastValue="0"/>
+    <field name="fid" reuseLastValue="0"/>
+  </reuseLastValue>
+  <dataDefinedFieldProperties/>
+  <widgets/>
+  <previewExpression>"NF_ID"</previewExpression>
+  <mapTip enabled="1"></mapTip>
+  <layerGeometryType>2</layerGeometryType>
+</qgis>
