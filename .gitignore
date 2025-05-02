@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# Data & cache files
+*.sqlite3
+*.db
+*.hdf5
+*.h5
+*.log
+*.tsv
+*.zip
+*.gz
+*.json
+*.xml
+*.nc
+*.npz
+*.pkl
+*.joblib
+*.sav
+
+# OS metadata
+.DS_Store
+Thumbs.db
