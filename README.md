@@ -1,6 +1,6 @@
 # ❄️ 제설 사각지대 해소를 위한 열선 설치 입지 분석
 
-도심 내 겨울철 결빙 사고를 예방하고, 의료·보행 취약 지역의 안전 사각지대를 줄이기 위해 과학적 근거 기반으로 열선 설치 후보지를 선정하는 프로젝트입니다.
+도심 내 겨울철 결빙 사고를 예방하고, 의료·보행 취약 지역의 안전 사각지대를 줄이기 위해 과학적 근거 기반으로 열선 포장 설치 후보지를 선정하는 프로젝트입니다.
 
 ---
 
@@ -30,7 +30,6 @@
    - 최대 경사도 상위 50% 격자
 
 2. **2차 분석 (도로별 가점 요소)**
-   다음 6가지 요소 충족 시 1점 부여 (0~6점)
    - 24시간 음영지 포함 여부
    - 버스 노선 경유 여부
    - 과거 결빙 사고 이력
@@ -43,7 +42,7 @@
    - 총점 = 3: 설치 필요 도로
 
 4. **예산 산정 및 타당성 검토**
-   - 지역별 과거 공사 단가(원/m) 적용
+   - 과거 사례 공사 단가(원/m) 적용
    - 평균·최소·최대 비용 범위 제시
 
 ---
@@ -52,86 +51,83 @@
 
 ```text
 ...
-├── data/                     # 원본·가공 GIS 자료
-│   ├── raw/                  # 원본 shapefile, API 결과 등
-│   └── processed/            # 분석용 가공 데이터
-├── src/
-│   ├── data_collection/      # 기상·버스노선 등 수집 스크립트
-│   ├── preprocessing/        # 격자 생성, 경사도 추출 모듈
-│   ├── analysis/             # 접근성·결빙 분석 및 점수화 스크립트
-│   ├── visualization/        # 지도 시각화 모듈
-│   └── sql/                  # 결빙 판정 SQL 쿼리
-├── final_results/            # 최종 QGIS 프로젝트 및 산출물
-├── docs/                     # 기획안·발표 자료·보고서
-└── requirements.txt          # Python 의존성 목록
+.gitignore                            # Git ignore 설정파일
+README.md                             # 프로젝트 소개 및 실행 방법
+requirements.txt                      # Python 의존성 목록
+
+├── data/                             # 원본·가공 GIS 자료
+├── docs/                             # 기획안·발표 자료·보고서
+├── scripts/
+├── src/                              # 분석 코드 모음
+│   ├── initial_filtering/            # 1차 필터링 관련 코드
+│   │   ├── collect_weather_data_from_api.py
+│   │   ├── collect_bus_routes.py
+│   │   ├── create_500m_grid.py
+│   │   └── slope_extraction.py
+│   └── road_scoring/                 # 2차 도로별 가점 요소 분석 코드
+│       ├── accident_history_analysis/      # 사고 이력 분석 모듈
+│       ├── excavation_roads/               # 굴착 제한 도로 정보 모듈
+│       ├── existing_heated_pavement/       # 기존 열선 포장 구역 모듈
+│       ├── common_basemap/                 # 기본 배경지도 레이어 모듈
+│       ├── snow_vulnerability/             # 제설 취약성 분석 모듈
+│       ├── shading_analysis/               # 음영지(그림자) 분석 모듈
+│       ├── slope/                          # 경사도 계산 모듈
+│       └── bus_routes/                     # 버스 노선 데이터 및 시각화
+├── intermediate_results/             # 중간 산출물 (정리 용도)
+└── final_results/                    # 최종 QGIS 프로젝트 및 산출물
 ````
 
 ---
 
 ## 설치 및 실행 방법
 
-1. 리포지토리 클론
-
-   ```bash
-   git clone https://github.com/your-org/freezing-heatmap.git
-   cd freezing-heatmap
-   ```
-2. 의존성 설치
+1. 의존성 설치
 
    ```bash
    pip install -r requirements.txt
    ```
-3. 데이터 수집
+2. 1차 필터링 실행
 
    ```bash
-   # 기상 데이터 수집
-   python src/data_collection/collect_weather_data_from_api.py
-   # 버스 노선 정보 수집
-   python src/data_collection/collect_bus_routes.py
+   python src/initial_filtering/data_collection/collect_weather_data_from_api.py
+   python src/initial_filtering/data_collection/collect_bus_routes.py
+   python src/initial_filtering/preprocessing/create_500m_grid.py
+   python src/initial_filtering/preprocessing/slope_extraction.py
    ```
-4. 전처리 및 분석
+3. 2차 분석 및 시각화 실행
 
    ```bash
-   # 격자 생성 및 경사도 추출
-   python src/preprocessing/create_500m_grid.py
-   python src/preprocessing/slope_extraction.py
-
-   # 접근성 평가 및 결빙 판단
-   python src/analysis/scoring.py
+   python src/road_scoring/analysis/scoring.py
+   python src/road_scoring/visualization/freezing_visualization.py
    ```
-5. 시각화
+4. 최종 결과 확인
 
-   ```bash
-   python src/visualization/freezing_visualization.py
-   ```
-6. 결과 확인
-
-   * `final_results/final_analysis.qgz` (QGIS 프로젝트)
-   * `final_results/final_selected_roads.gpkg` (우선 설치 도로)
+   * QGIS 프로젝트: `final_results/final_analysis.qgz`
+   * 우선 설치 도로: `final_results/final_selected_roads.gpkg`
 
 ---
 
 ## 모듈별 설명
 
-* **data\_collection/**: 공공 API 및 스크래핑으로 원본 데이터를 수집합니다.
-* **preprocessing/**: 공간 격자 생성, DEM 기반 경사도 계산 등 전처리를 수행합니다.
-* **analysis/**: 필터링, 가점 요소 적용, 점수화 로직을 포함합니다.
-* **visualization/**: Folium·Matplotlib 기반 지도 및 차트 생성 모듈입니다.
-* **sql/**: PostgreSQL에서 결빙 여부를 판정하는 쿼리를 관리합니다.
+* **src/initial\_filtering/data\_collection/**: 기상청 API, 버스노선 등 원본 데이터 수집 스크립트
+* **src/initial\_filtering/preprocessing/**: 500m 격자 생성, 경사도 계산 등 전처리 모듈
+* **src/road\_scoring/analysis/**: 가점 요소 집계 및 점수 계산 로직
+* **src/road\_scoring/visualization/**: 위험도 지도 및 차트 생성 모듈
+* **src/road\_scoring/sql/**: 결빙 판정 SQL 쿼리 파일
 
 ---
 
 ## 한계 및 개선 방향
 
-* **도로별 온도 정확도**: 기상관측소 관측값 사용으로 로컬 마이크로 클라이밋 반영 미흡
-* **자동화 보강**: 버스 노선·보호구역 시각화 자동화 스크립트 추가 필요
-* **실시간 모니터링**: IoT 센서 연동 및 실시간 계측 데이터 활용 권장
-* **추가 요소 반영**: 수목·건물 음영·제설 이력 등 세부 인자 확장
+* 기상관측소 기반 온도로 인한 도로별 정확도 부족
+* 자동화 스크립트 보강 필요 (버스노선·보호구역 시각화)
+* IoT 센서 연동을 통한 실시간 모니터링 권장
+* 추가 요소(수목 음영, 제설 이력) 반영 확대
 
 ---
 
 ## 참고 자료
 
-* 논문: Won et al. (2024), Jang & Park (2023)
-* 데이터: 기상청 API, 서울열린데이터광장, 국토정보플랫폼
-* 도구: QGIS, Python, Folium, Kakao Geocoding API
+* Won et al. (2024), Jang & Park (2023)
+* 기상청 API, 서울열린데이터광장, 국토정보플랫폼
+* QGIS, Python, Folium, Kakao Geocoding API
