@@ -135,5 +135,3 @@
 * 논문: Won et al. (2024), Jang & Park (2023)
 * 데이터: 기상청 API, 서울열린데이터광장, 국토정보플랫폼
 * 도구: QGIS, Python, Folium, Kakao Geocoding API
-
-```
